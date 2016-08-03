@@ -1,0 +1,17 @@
+apply plugin: 'java'
+apply plugin: 'maven'
+apply plugin: 'application'
+
+group = 'de.greenrobot'
+archivesBaseName = 'greendao-example-generator'
+version = '1.4.0-SNAPSHOT'
+sourceCompatibility = 1.6
+mainClassName = "com.sponia.daogenerator.MyDaoGenerator"
+
+dependencies {
+    compile('de.greenrobot:greendao-generator:2.0.0')
+}
+
+artifacts {
+    archives jar
+}
