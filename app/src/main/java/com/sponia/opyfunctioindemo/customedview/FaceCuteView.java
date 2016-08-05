@@ -43,7 +43,7 @@ public class FaceCuteView  extends SurfaceView implements SurfaceHolder.Callback
     //2.监听SurfaceView的生命周期
     private void initParams() {
         this.getHolder().addCallback(this);
-        this.setZOrderOnTop(true);
+        this.setZOrderOnTop(true);//把最新绘制的至于顶部
 //        this.setEGLConfigChooser(8, 8, 8, 8, 16, 0);
         this.getHolder().setFormat(PixelFormat.TRANSLUCENT);
     }
